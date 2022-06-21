@@ -9,11 +9,12 @@ console.log(d06)
 
 //testando se a destresa foi digitada e pedindo para colocala
 
-function contar() {
-    let num = document.getElementById('txtd')
+function calcular() {
+    let num = document.getElementById('txtd').value;
     let res = document.getElementById('res')
     if (num == 0) {
         window.alert('Por favor informe a sua destreza')
+  
     }
     
 }
