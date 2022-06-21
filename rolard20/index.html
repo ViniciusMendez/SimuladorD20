@@ -12,19 +12,20 @@
         <h1>Simulando Um ataque de DeD</h1>
     </header>
 
-    <section class="fixa">
-        <p>preencher um ficha</p>
+    <section>
+        <div id = 'd20'>
+            <h2>Qual sua destreza para o ataque? </h2>
+            <p>destreza: <input type="number" name="inicio" id="txtd"></p>
+            <p><input type="button" value="Fazer Ataque" onclick="contar()"></p>
+            
+        </div>
+
+        <div id = 'dado'></div>
+
+        <div id = 'res'>
+
+        </div>
     </section>
-
-        <div id="dados">
-            <img id="d20" src="d20/D20-Dice-clipart-png-1.png" alt="">
-            <img id="d6" src="d06/lado1.jpg" alt="">
-            <p>botao</p>
-        </div>
-
-        <div id="res">
-            mostrar valores e dado tirado
-        </div>
 
     <footer>
         <p>direitos reservados</p>
