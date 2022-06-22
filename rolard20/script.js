@@ -12,7 +12,7 @@ console.log(d06)
 //testando se a destresa foi digitada e pedindo para colocala
 
 function calcular() {
-    if (num == 0) {
+    if (num.value.length == 0) {
         window.alert('Por favor informe a sua destreza')
   
     }
