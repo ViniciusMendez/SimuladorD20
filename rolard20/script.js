@@ -33,24 +33,33 @@ setTimeout(function mostrar(){
         case 2:
             imgdodo.setAttribute('src', 'd20/d20lado02.png')
              break    
-         case 3:
+        case 3:
              imgdodo.setAttribute('src', 'd20/d20lado03.png')
              break
-         case 4:
+        case 4:
              imgdodo.setAttribute('src', 'd20/d20lado04.png')
              break
         case 5:
             imgdodo.setAttribute('src', 'd20/d20lado05.png')
             break
-         case 6:
+        case 6:
             imgdodo.setAttribute('src', 'd20/d20lado06.png')
             break
-         case 7:
+        case 7:
              imgdodo.setAttribute('src', 'd20/d20lado07.png')
              break
-         case 8:
+        case 8:
              imgdodo.setAttribute('src', 'd20/d20lado08.png')
               break
+        case 9:
+            imgdodo.setAttribute('src', 'd20/d20lado09.png')
+             break  
+        case 10:
+            imgdodo.setAttribute('src', 'd20/d20lado10.png')
+             break
+        case 11:
+            imgdodo.setAttribute('src', 'd20/d20lado11.png')
+            break    
 
     }
 }, 5000);
