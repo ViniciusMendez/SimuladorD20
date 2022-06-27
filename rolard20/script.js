@@ -1,12 +1,11 @@
 // sorteio dos dados d06 e d20
-var d20 = Math.floor(Math.random()*20 + 1);
+//var d20 = Math.floor(Math.random()*20 + 1);
 var d06 = Math.floor(Math.random()*6 + 1);
 let imgdodo = document.getElementById('face')
 //let num = document.getElementById('txtd');
 //let res = document.getElementById('res');
 
-console.log(d20)
-console.log(d06)
+
 
 // ____________________//______________________
 
@@ -24,72 +23,74 @@ function calcular() {
         
         //declarando cada caso e mostrando o lado de acorco com o numero sorteado
         setTimeout(function mostrar(){
+            var d20 = Math.floor(Math.random()*20 + 1);
             switch (d20) {
                 case 1:
                     imgdodo.setAttribute('src', 'd20/d20lado01.png')
-                    break
+                    break;
                 case 2:
                     imgdodo.setAttribute('src', 'd20/d20lado02.png')
-                     break    
+                     break;  
                 case 3:
                      imgdodo.setAttribute('src', 'd20/d20lado03.png')
-                     break
+                     break;
                 case 4:
                      imgdodo.setAttribute('src', 'd20/d20lado04.png')
-                     break
+                     break;
                 case 5:
                     imgdodo.setAttribute('src', 'd20/d20lado05.png')
-                    break
+                    break;
                 case 6:
                     imgdodo.setAttribute('src', 'd20/d20lado06.png')
-                    break
+                    break;
                 case 7:
                      imgdodo.setAttribute('src', 'd20/d20lado07.png')
-                     break
+                     break;
                 case 8:
                      imgdodo.setAttribute('src', 'd20/d20lado08.png')
-                      break
+                      break;
                 case 9:
                     imgdodo.setAttribute('src', 'd20/d20lado09.png')
-                     break  
+                     break 
                 case 10:
                     imgdodo.setAttribute('src', 'd20/d20lado10.png')
-                     break
+                     break;
                 case 11:
                     imgdodo.setAttribute('src', 'd20/d20lado11.png')
-                    break    
+                    break;    
                 case 12:
                     imgdodo.setAttribute('src', 'd20/d20lado12.png')
-                    break      
+                    break;      
                 case 13:
                     imgdodo.setAttribute('src', 'd20/d20lado13.png')
-                    break      
+                    break;      
                 case 14:
                     imgdodo.setAttribute('src', 'd20/d20lado14.png')
-                    break  
+                    break;  
                 case 15:
                     imgdodo.setAttribute('src', 'd20/d20lado15.png')
-                    break   
+                    break;   
                 case 16:
                     imgdodo.setAttribute('src', 'd20/d20lado16.png')
-                    break
+                    break;
                 case 17:
                     imgdodo.setAttribute('src', 'd20/d20lado17.png')
-                    break  
+                    break;  
                 case 18:
                     imgdodo.setAttribute('src', 'd20/d20lado18.png')
-                    break 
+                    break; 
                 case 19:
                     imgdodo.setAttribute('src', 'd20/d20lado19.png')
-                    break       
+                    break;       
                 case 20:
                     imgdodo.setAttribute('src', 'd20/d20lado20.png')
-                    break  
+                    break;  
                 default:
-                    break   
+                    break;   
                                         
             }   
-            res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20}` 
+            var atq = des+d20
+            res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20} no dado eu ataque é ${atq}` 
         }, 1000);   
          
     }   
