@@ -98,4 +98,8 @@ function calcular() {
     
 }
 
+function dano(){
+    
+}
+
 
