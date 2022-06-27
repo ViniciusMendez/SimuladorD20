@@ -93,7 +93,9 @@ function calcular() {
             res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20} no dado eu ataque é ${atq}` 
         }, 1000);   
          
-    }   
+    } 
+    
+    
 }
 
 

@@ -38,6 +38,11 @@ div>p{
     padding-bottom: 20px;
     
 }
+div > input{
+    width: 150px;
+    padding: 5px;
+    margin-left: 45%;
+}
 img{
     border-style: double;
     padding: 10px;
