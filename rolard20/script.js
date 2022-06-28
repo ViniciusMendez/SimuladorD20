@@ -1,9 +1,9 @@
 // sorteio dos dados d06 e d20
 //var d20 = Math.floor(Math.random()*20 + 1);
-var d06 = Math.floor(Math.random()*6 + 1);
+//var d06 = Math.floor(Math.random()*6 + 1);
 let imgdodo = document.getElementById('face')
-//let num = document.getElementById('txtd');
-//let res = document.getElementById('res');
+let num = document.getElementById('txtd');
+let res = document.getElementById('res');
 
 
 
@@ -12,9 +12,8 @@ let imgdodo = document.getElementById('face')
 //testando se a destresa foi digitada e pedindo para colocala
 
 function calcular() {
-    let num = document.getElementById('txtd');
     let res = document.getElementById('res');
-    var des = Number(num.value)
+    des = Number(num.value)
     if (num.value.length == 0) {
         window.alert('Por favor informe a sua destreza')
 //caso aqeui ele coloca o valor digitado
@@ -89,8 +88,9 @@ function calcular() {
                     break;   
                                         
             }   
-            var atq = des+d20
+             atq = des+d20 // essa variavel foi posta aqui  dentro da funçao pois é nesesaria que funcione aqui dentro  [mais foi colocada sem var ou let tornando-a global pois sera nescessario usala depois]
             res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20} no dado eu ataque é ${atq}` 
+            
         }, 1000);   
          
     } 
@@ -101,13 +101,47 @@ function calcular() {
 function dano(){
     // pegando as variaveis poder executar o codigo
     let num = document.getElementById('txtd');
-    //var dano = Number(atq.value)
     // fazendo o botão de dano informar que nada doi digitado na destreza
     if(num.value.length == 0){
         window.alert('Não é possivel Calcular o DANO')
-    //aqui ele vai jogar 1 d6 e somar com a destreza    
+        
+    }else {
+        if(atq <= 15){
+            res.innerHTML = ' voce erro tente novamente'
+        }else{
+            imgdodo.setAttribute('src', 'd06/d6rodando.gif')
+                
+            setTimeout(function mostrar2(){
+                var d06 = Math.floor(Math.random()*6 + 1);
+                switch (d06) {
+                    case 1:
+                        imgdodo.setAttribute('src', 'd06/dado-1.png')
+                        break;
+                    case 2:
+                        imgdodo.setAttribute('src', 'd06/dado-2.png')
+                        break;
+                    case 3:
+                        imgdodo.setAttribute('src', 'd06/dado-3.png')
+                        break;        
+                    case 4:
+                        imgdodo.setAttribute('src', 'd06/dado-4.png')
+                        break;
+                    case 5:
+                        imgdodo.setAttribute('src', 'd06/dado-5.png')
+                        break;
+                    case 6:
+                        imgdodo.setAttribute('src', 'd06/dado-6.png')
+                        break;        
+                    default:
+                        break;
+                }
+                
+                var dano = des + d06
+                res.innerHTML =`Você deu ${dano} Dano`
 
-    }else{
-        imgdodo.setAttribute('src','d06/')
-    }
-}
+            },1000);
+        }
+    } 
+        
+    
+}    
