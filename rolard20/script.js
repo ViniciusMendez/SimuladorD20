@@ -99,7 +99,15 @@ function calcular() {
 }
 
 function dano(){
-    
+    // pegando as variaveis poder executar o codigo
+    let num = document.getElementById('txtd');
+    //var dano = Number(atq.value)
+    // fazendo o botão de dano informar que nada doi digitado na destreza
+    if(num.value.length == 0){
+        window.alert('Não é possivel Calcular o DANO')
+    //aqui ele vai jogar 1 d6 e somar com a destreza    
+
+    }else{
+        imgdodo.setAttribute('src','d06/')
+    }
 }
-
-
