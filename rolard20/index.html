@@ -13,18 +13,23 @@
     </header>
 
     <section>
-        <div id = 'd20'>
+        <div class = 'd20'>
             <h2>Qual sua destreza para o ataque? </h2>
             <p>destreza: <input type="number" name="inicio" id="txtd"></p>
-             <input type="button" value="jogar dado" onclick="calcular()"/>
-            
+                 
         </div>
 
-        <div id = 'dado'></div>
-            <img src="d20/D20-Dice-clipart-png-1.png" alt="dado" id="face" >
-        
+        <div class="calq">
+            <input type="button" value="jogar dado" onclick="calcular()"/>
+        </div>
 
-        <div id = 'dado2'>
+
+        <div class = 'dado'>
+            <img src="d20/D20-Dice-clipart-png-1.png" alt="dado" id="face" >
+        </div>
+            
+
+        <div class = 'dado2'>
             <input type="button" value="Jogar Dano" onclick="dano()"/>
         </div>
 

@@ -5,9 +5,13 @@
     padding: 0px;
     font-size: 15pt;
 }
+main{
+    max-width: 800px;
+    min-width: 320px;
+}
 
 body{
-    background-color: rgb(233, 0, 0);
+    background-color: rgb(238, 238, 238);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     
 }
@@ -20,34 +24,57 @@ header{
 }
 
 section{
-    margin: 15px;
-    padding: 10;
-}
-div{
+    margin: auto ;
     padding: 10px;
-    margin: 20;
-}
+    background-color: aqua;
+    border-radius: 8px;
+    max-width: 800px;
+    min-width: 320;
 
-div> h2 {
+
+}
+.d20{
+    margin: auto;
     padding: 10px;
     text-align: center;
-   
+    font-size: smaller;
+    
 }
-div>p{
+
+div{
+    padding: 10px;
+}
+
+.calq{
     margin: auto;
-    padding-bottom: 20px;
+    padding: 15px;
+    height: 30px;
+    width: 110px;
+}
+.dado2{
+    margin: auto;
+    padding: 10px;
+    height: 30px;
+    width: 110px;
+ 
+}
+
+.dado{
+    margin: auto;
+    padding: 10px;
+    border-style: double;
+    height:150px ;
+    width: 150px;
+    
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
     
 }
 div > input{
-    width: 150px;
+    font-size: 15;
     padding: 5px;
-    margin-left: 45%;
-}
-img{
-    border-style: double;
-    padding: 10px;
-    margin-left: 42%;
-    width: 200px;
 }
     
 

@@ -89,7 +89,7 @@ function calcular() {
                                         
             }   
              atq = des+d20 // essa variavel foi posta aqui  dentro da funçao pois é nesesaria que funcione aqui dentro  [mais foi colocada sem var ou let tornando-a global pois sera nescessario usala depois]
-            res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20} no dado eu ataque é ${atq}` 
+            res.innerHTML = ` Sua destreza é ${des} e voce tirou ${d20} no dado seu ataque é ${atq}` 
             
         }, 1000);   
          
